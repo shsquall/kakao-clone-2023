@@ -1,0 +1,130 @@
+.recommended-friends {
+  margin: 10px 0px;
+  padding: 17px 0px;
+  border-top: var(--screen-border-bottom);
+  border-bottom: var(--screen-border-bottom);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--grey-text);
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 110px 0px;
+  text-align: center;
+  font-size: 17px;
+  color: var(--grey-text);
+}
+
+.open-chat_bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.open-chat_bar_title {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.open-chat_bar_link {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__column:last-child {
+  position: relative;
+}
+
+.open-post__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.open-post__detail {
+  display: flex;
+  align-items: center;
+}
+
+.open-post__detail img {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  margin-right: 5px;
+}
+
+.open-post__memeber-count {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.open-post__detail .divider {
+  width: 1px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px 5px;
+}
+
+.open-post__active {
+  color: #ffb0e0;
+}
+
+.open-post-photo {
+  position: relative;
+}
+
+.open-post-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+}
+
+.open-post__like-count {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 3px 7px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 13px;
+}
+
+.open-post__like-count span {
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.open-post__like-count:hover i {
+  will-change: tramsform;
+  animation: heartBeat 1s linear infinite;
+}

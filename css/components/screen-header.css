@@ -1,0 +1,35 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 25px 25px 25px;
+}
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.screen-header__icons span {
+  margin-left: 20px;
+  position: relative;
+}
+
+.screen-header__check {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+}
+
+@keyframes spinningIcons {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: spinningIcons 1s linear infinite;
+}
